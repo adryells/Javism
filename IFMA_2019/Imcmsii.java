@@ -1,3 +1,4 @@
+/*
 package exdados.IFMA_2019;
 import java.util.*;
 public class Imcmsii {
@@ -14,3 +15,4 @@ public class Imcmsii {
    System.out.printf("Seu imc é: %.2f", imc);
   }
 }
+*/

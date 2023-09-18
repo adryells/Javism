@@ -1,14 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package exdados.IFMA_2019;
 
-/**
- *
- * @author aluno09
- */
+package exdados.IFMA_2019;
 
 public class sm {
     public static void main(String[] args) {
@@ -25,3 +17,4 @@ public class sm {
         }
     }
 }
+*/

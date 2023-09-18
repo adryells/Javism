@@ -1,17 +1,9 @@
-
+/*
 package exdados.IFMA_2019;
 import java.util.*;
-/**
- *
- * @author aluno09
- */
 public class MaiorNumero {
-  
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
           Scanner input = new Scanner(System.in);
     
     System.out.println("a: ");
@@ -26,3 +18,4 @@ public class MaiorNumero {
     }
     
 }
+*/
