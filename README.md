@@ -1,2 +1,1 @@
-# Old_Exercicios_Java
-Exercicios java feitos em sala de aula
+# Repositório usado para salvar estudos de java
