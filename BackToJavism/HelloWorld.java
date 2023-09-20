@@ -1,7 +1,7 @@
 package BackToJavism;
 
 /*
-In this file, I study the basic of programming logig, topics like: Scopes, Access, variables, functions, for loops and
+In this file, I study the basic of programming logic, topics like: Scopes, Access, variables, functions, for loops and
 decision structures
 */
 
