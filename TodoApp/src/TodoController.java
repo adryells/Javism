@@ -9,19 +9,16 @@ class TodoUpdateParams {
 
 class TodoController{
     public Todo createTodo(String title, String startDate, String endDate){
-        Todo newTodo = new Todo();
 
-        UUID uuid = UUID.randomUUID();
-
-        newTodo.setTitle(title);
-        newTodo.setStartDate(startDate);
-        newTodo.setEndDate(endDate);
-        newTodo.setId(uuid);
-
-        return newTodo;
+        return new Todo(
+                title,
+                startDate,
+                endDate,
+                UUID.randomUUID()
+        );
     }
 
-    public Todo updateTodo(TodoUpdateParams params, Todo todo){
+    public void updateTodo(TodoUpdateParams params, Todo todo){
         if (params.title != null){
             todo.setTitle(params.title);
         }
@@ -34,7 +31,6 @@ class TodoController{
             todo.setStartDate(params.endDate);
         }
 
-        return todo;
     }
 
     public Todo getTodoByIdFromList(List<Todo> todoList, String todoId){
@@ -46,19 +42,12 @@ class TodoController{
     }
 
     public void listTodosFromList(List<Todo> todoList){
-        for (int i = 0; i < todoList.toArray().length; i++) {
-            Todo currentTodo = (Todo) todoList.toArray()[i];
-
-            System.out.println("Task Id: " + currentTodo.id);
-            System.out.println(currentTodo.title);
-            System.out.println("\n");
+        for(Todo currentTodo : todoList){
+            System.out.println(currentTodo);
         }
     }
 
     public void listDetailsFromTodo(Todo todo) {
-        System.out.println("Title: " + todo.title);
-        System.out.println("Start date: " + todo.startDate.toString());
-        System.out.println("End Date: " + todo.endDate.toString());
-        System.out.println("ID: " + todo.id);
+        System.out.println(todo);
     }
 }

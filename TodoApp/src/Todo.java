@@ -7,7 +7,15 @@ class Todo{
     public String title;
     public Date startDate;
     public Date endDate;
+
     public UUID id;
+
+    public Todo(String title, String startDate, String endDate, UUID id){
+        this.title = title;
+        this.setStartDate(startDate);
+        this.setEndDate(endDate);
+        this.id = id;
+    }
 
     String formatPattern = "yyyy-MM-dd";
     SimpleDateFormat dateFormat = new SimpleDateFormat(formatPattern);
@@ -52,5 +60,10 @@ class Todo{
 
     public void setId(UUID id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Id: %s%nTitle: %s%nStart Date: %s%nEnd Date: %s", id.toString(), title, startDate, endDate);
     }
 }
