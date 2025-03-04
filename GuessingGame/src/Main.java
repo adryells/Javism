@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int targetNumber = (int) (Math.random() * 100);
-        int lowerBound = targetNumber - 10;
+        int lowerBound = Math.max(0, targetNumber - 10);
         int upperBound = targetNumber + 10;
 
         System.out.print("I'm thinking of a number, what is your guess? [0] - EXIT: ");
